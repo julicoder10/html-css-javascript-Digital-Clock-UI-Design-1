@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background:black;
+}
+#clock h2{
+    position:relative;
+    display:block;
+    color:#fff;
+    text-align:center;
+    margin:10px 0;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing:10px;
+}
+#clock #time{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+#clock #time div{
+    position:relative;
+    margin:0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+#clock #time div span{
+    position:relative;
+    width:200px;
+    height:150px;
+    background:#2a2438;
+    font-weight:300;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:3em;
+    z-index:10;
+    box-shadow:0 0 0 1px rgba(0,0,0, .2);  
+    color:white;
+    text-shadow:0 0 10px white, 0 0 20px white;
+}
+#clock #time div span:nth-child(2){
+    height:30px;
+    font-size:0.7em;
+    letter-spacing:0.2em;
+    font-weight:500;
+    z-index:9;
+    box-shadow:none;
+    background:black;
+    text-transform: uppercase;
+}
